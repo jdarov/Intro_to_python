@@ -1,0 +1,17 @@
+1. idi. leg
+2. non-ido, leg (camel)
+3. idi, leg
+4. non-id, leg (snake + camel)
+5. non-id, il (# begins)
+6. idi, legal 
+7. non-idi, legal (constant name SCREAMING)
+8. non idi, legal but dont use punctuation except in special cases and mostly _
+
+SAME (functions and variables = same)
+
+LAZY_DOG3 and BIG_NUMBER are the only idi CONSTANT names
+
+CatName and BigNumber3 are only idi class names (CamelCase)
+
+Rassignment prints the greetings with Victor first and then Nina
+
