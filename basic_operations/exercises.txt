@@ -1,0 +1,9 @@
+3. print('5' + '10') will return '510' as a string. this is string concatenation and not arithmetic 
+4. print(int('5') + int('10')) #will print 15
+5. yes. a list is determined by len(list)-1 because it starts it's index from 0. 
+    for example, [1, 2, 3]  list[3] will return an error as the lenght is 3 from the index is 0, 1, 2
+'foo' == 'Foo' will return a False boolean
+7. int('3.1415') will return a number 3, rounded to nearest whole real number without decimal and not as a string
+    WRONG : because '3.1415' is a float INSIDE of a string the int can not coerce two types
+8. '12' < '9' will return True boolean since '1' is less on the ASCII table than '9' and it compares char first, then stops
+when it determines the value so '1' < '9' is True
