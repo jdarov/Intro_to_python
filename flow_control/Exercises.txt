@@ -1,0 +1,16 @@
+1. False
+True
+3
+3
+False
+True
+False
+False
+False 
+True
+
+3. Product2
+    Product not found!
+
+5. Empty because the empty list is a Falsy
+
