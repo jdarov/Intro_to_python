@@ -1,0 +1,36 @@
+1. len(people)
+2. no because tuples are immutable you can not change them once assigned. we would have to get creative in order to edit a tuples
+stuff = list(stuff)
+stuff[2] = 'goodbye'
+stuff = tuple(stuff)
+
+3. lists are mutable, tuples are not
+lists use [], tuples use ()
+lists and tuples are sequences
+heterogeneous - dont need to be the same type
+
+4. strings are not real sequences tho b/c they are homogeonous but can be indexed like a sequence
+
+5. sets are unordered collections and sequences are ordered
+
+6. pi = 3.141592
+str_pi = str(pi)
+
+7. [0, 1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5]
+[3, 7, 11]
+[]
+[8, 7, 6, 5, 4]
+
+print(list(range(3, 17, 4)))
+
+my_list - [1, 2, 3, [4, 5, 6]]
+another_list = list(my_list)
+1. yes my_list == another_list
+2. no they are not the same object 
+3. yes they are equal my_list[3] == another_list[3]
+4.  yes nested lists will create the same object
+
+10. bot is mistaken as a set is an unordered collection so the final print will not be in order 
+
+11. 
