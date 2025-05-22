@@ -1,0 +1,60 @@
+5. 
+'cat'                #yes
+(3, 1, 4, 1, 5, 9, 2)   #yes
+['a', 'b']              #no, mutable object
+{'a': 1, 'b': 2}         #no, mutable
+range(5)                 #yes
+{1, 4, 9, 16, 25}        #no, mutable
+3                        #yes
+0.0                      #yes  
+frozenset({1, 4, 9, 16, 25}) #yes
+
+6. 
+
+print('abc-def'.isalpha())  #false
+print('abc_def'.isalpha())  #false
+print('abc def'.isalpha())  #false
+print('abc def'.isalpha() and
+      'abc def'.isspace())  #false
+print('abc def'.isalpha() or
+      'abc def'.isspace())  #true
+print('abcdef'.isalpha())  #True
+print('31415'.isdigit())  #true
+print('-31415'.isdigit())  #false
+print('31_415'.isdigit())  #False
+print('3.1415'.isdigit())  #false
+print(''.isspace())  #false
+
+8. when you call a indexed list from a list (list[0:2]) it creates a lazy copy of that list with a new index for each element
+example new_list = list[5:10], the list[5] == new_list[0]. so when you search that new string it will give you the new strings index
+
+11. print('johnson' in 'Joe Johnson')  #false
+print('sen' not in 'Joe Johnson')      #true
+print('Joe J' in 'Joe Johnson')        #true
+print(5 in range(5))                   #false
+print(5 in range(6))                   #true
+print(5 not in range(5, 10))           #false
+print(0 in range(10, 0, -1))           #false
+print(4 in {6, 5, 4, 3, 2, 1})         #true
+print({1, 2, 3} in {1, 2, 3})          #true  sets in sets = false {1, 2, 3} is true when next set is {{1,2,3}, 2}
+print({3, 2} in {1, frozenset({2, 3})})  #false
+
+
+13. 
+cats = ('Cocoa', 'Cheddar',
+        'Pudding', 'Butterscotch')
+print('Butterscotch' in cats)  #true
+print('Butter' in cats)         #false
+print('Butter' in cats[3])      #true  "will check for substring inside a specific string of elements
+print('cheddar' in cats)         #false  
+
+15. pets = {
+    'Cat':  'Meow',
+    'Dog':  'Bark',
+    'Bird': 'Tweet',
+}
+
+keys = pets.keys()   #this is a object so any changes will be reflected 
+del pets['Dog']
+pets['Snake'] = 'Sssss'
+print(keys)           #'Cat', 'Bird', 'Snake'
