@@ -1,0 +1,5 @@
+1. counter = 0
+
+while counter < 5:
+    print(counter)    #counter will always be less than 5 (0) as it never increments in the loop, causing an infinite loop
+
